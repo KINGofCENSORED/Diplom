@@ -1,0 +1,1399 @@
+<html lang="en"><head>
+  
+  
+  <link rel="apple-touch-icon" sizes="76x76" href="/static/assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/static/assets/img/favicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="nodejsscan is a static security code scanner for Node.js applications. ">
+  <meta name="author" content="Ajin Abraham">
+  <title>
+    nodejsscan v4.8 - 
+Scan Results
+
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+  <link href="/static/assets/css/nucleo-icons.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="/static/assets/css/black-dashboard.css" rel="stylesheet">
+  <link href="/static/assets/css/nodejsscan.css" rel="stylesheet">
+  
+  <link href="/static/assets/css/monokai-sublime.css" rel="stylesheet">
+  <link href="/static/assets/css/shCoreDefault.min.css" rel="stylesheet">
+
+<style type="text/css">/* Chart.js */
+@keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style></head>
+
+<body class="">
+<div class="wrapper">
+    <div class="main-panel" data="green">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="/" class="nav-link">
+                <strong>Upload </strong>
+                </a>
+              </li>
+               <li class="nav-item">
+                <a href="/scans/" class="nav-link">
+                <strong> Scans  </strong>
+                </a>
+              </li>
+               <li class="nav-item">
+               <a href="#" class="nav-link">
+                Made with <span style="color: red">♥</span> in India 
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+
+      <div class="content">
+           <div class="row">
+  
+          <div class="col-lg-4">
+            <div class="card card-chart">
+              <div class="card-header">
+                <h5 class="card-category">BASIC SCAN INFORMATION</h5>
+                <h3 class="card-title"><i class="tim-icons icon-alert-circle-exc text-info"></i> Information</h3>
+              </div>
+              <div class="card-body">
+               <div class="ml-1">
+                <p><span class="badge badge-info">File</span>  </p><h6>ml_model_deployment_example.git</h6> <p></p>
+                <p><span class="badge badge-info">SHA256 Hash</span>  </p><h6>e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8 </h6>  <p></p>
+                <p><span class="badge badge-info">Total Files Scanned</span>  </p><h6>1 </h6> <p></p>
+                  <span class="badge badge-danger">Types of Issues</span>  <h2>14  </h2><br>
+                  <span class="badge badge-danger">Total No of Issues</span> <h2> 14  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-lg-4">
+            <div class="card card-chart">
+              <div class="card-header">
+                <h5 class="card-category">DISTRIBUTION OF SEVERITY BY ISSUE TYPES</h5>
+                <h3 class="card-title"><i class="tim-icons icon-chart-pie-36 text-warning"></i> Severity</h3>
+              </div>
+              <div class="card-body">
+                  <div class="container"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                    <canvas id="Severity" style="display: block; width: 294px; height: 147px;" width="294" height="147" class="chartjs-render-monitor"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4">
+            <div class="card card-chart">
+              <div class="card-header">
+                <h5 class="card-category">NO OF FILES SCANNED VS ISSUES IDENTIFIED</h5>
+                <h3 class="card-title"><i class="tim-icons icon-send text-success"></i> Detections</h3>
+              </div>
+              <div class="card-body">
+                <div class="container"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                  <canvas id="Nos" style="display: block; width: 294px; height: 147px;" width="294" height="147" class="chartjs-render-monitor"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="card card-chart">
+              <div class="card-header ">
+                <div class="row">
+                  <div class="col-sm-6 text-left">
+                    <h5 class="card-category">OVERVIEW OF IDENTIFIED ISSUES</h5>
+                    <h2 class="card-title">Issues</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+               <canvas id="Findings" style="display: block; width: 1296px; height: 648px;" width="1296" height="648" class="chartjs-render-monitor"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+           
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="card ">
+              <div class="card-header">
+                <h5 class="card-category">SUMMARY OF FINDINGS</h5>
+                <h2 class="card-title"> Findings Summary</h2>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table tablesorter " id="">
+                    <thead class=" text-primary">
+                      <tr>
+                        <th>
+                          Issue
+                        </th>
+                        <th>
+                          Description
+                        </th>
+                        <th>
+                          Severity
+                        </th>
+                        <th class="text-center">
+                          Standards
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    
+                     <tr>
+                        <td>
+                         HELMET HEADER CHECK EXPECT CT 
+                        </td>
+                        <td>
+                         Helmet Expect CT header is not configured for this application.
+                        </td>
+                        <td>
+                        
+                             <span class="badge badge-info">
+                        
+                         INFO
+                         </span>
+                        </td>
+                        <td class="text-center">
+                          <br>
+                         CWE-693: Protection Mechanism Failure
+                        </td>
+                      </tr>
+                    
+                     <tr>
+                        <td>
+                         HELMET HEADER XSS FILTER 
+                        </td>
+                        <td>
+                         Helmet XSS Protection header is not configured for this application.
+                        </td>
+                        <td>
+                        
+                             <span class="badge badge-info">
+                        
+                         INFO
+                         </span>
+                        </td>
+                        <td class="text-center">
+                          <br>
+                         CWE-693: Protection Mechanism Failure
+                        </td>
+                      </tr>
+                    
+                     <tr>
+                        <td>
+                         HELMET HEADER IENOOPEN 
+                        </td>
+                        <td>
+                         Helmet IE No Open header is not configured for this application.
+                        </td>
+                        <td>
+                        
+                             <span class="badge badge-info">
+                        
+                         INFO
+                         </span>
+                        </td>
+                        <td class="text-center">
+                          <br>
+                         CWE-693: Protection Mechanism Failure
+                        </td>
+                      </tr>
+                    
+                     <tr>
+                        <td>
+                         HELMET HEADER DNS PREFETCH 
+                        </td>
+                        <td>
+                         Helmet DNS Prefetch header is not configured for this application.
+                        </td>
+                        <td>
+                        
+                             <span class="badge badge-info">
+                        
+                         INFO
+                         </span>
+                        </td>
+                        <td class="text-center">
+                          <br>
+                         CWE-693: Protection Mechanism Failure
+                        </td>
+                      </tr>
+                    
+                     <tr>
+                        <td>
+                         RATE LIMIT CONTROL 
+                        </td>
+                        <td>
+                         This application does not have API rate limiting controls.
+                        </td>
+                        <td>
+                        
+                             <span class="badge badge-info">
+                        
+                         INFO
+                         </span>
+                        </td>
+                        <td class="text-center">
+                          <br>
+                         CWE-770: Allocation of Resources Without Limits or Throttling
+                        </td>
+                      </tr>
+                    
+                     <tr>
+                        <td>
+                         HELMET HEADER REFERRER POLICY 
+                        </td>
+                        <td>
+                         Helmet Referrer Policy header is not configured for this application.
+                        </td>
+                        <td>
+                        
+                             <span class="badge badge-info">
+                        
+                         INFO
+                         </span>
+                        </td>
+                        <td class="text-center">
+                          <br>
+                         CWE-693: Protection Mechanism Failure
+                        </td>
+                      </tr>
+                    
+                     <tr>
+                        <td>
+                         ANTI CSRF CONTROL 
+                        </td>
+                        <td>
+                         This application does not have anti CSRF protection which prevents cross site request forgery attacks.
+                        </td>
+                        <td>
+                        
+                             <span class="badge badge-info">
+                        
+                         INFO
+                         </span>
+                        </td>
+                        <td class="text-center">
+                          <br>
+                         CWE-352: Cross-Site Request Forgery (CSRF)
+                        </td>
+                      </tr>
+                    
+                     <tr>
+                        <td>
+                         HELMET HEADER CHECK CSP 
+                        </td>
+                        <td>
+                         Helmet Content Security Policy header is not configured for this application.
+                        </td>
+                        <td>
+                        
+                             <span class="badge badge-info">
+                        
+                         INFO
+                         </span>
+                        </td>
+                        <td class="text-center">
+                          <br>
+                         CWE-693: Protection Mechanism Failure
+                        </td>
+                      </tr>
+                    
+                     <tr>
+                        <td>
+                         HELMET HEADER FEATURE POLICY 
+                        </td>
+                        <td>
+                         Helmet Feature Policy header is not configured for this application.
+                        </td>
+                        <td>
+                        
+                             <span class="badge badge-info">
+                        
+                         INFO
+                         </span>
+                        </td>
+                        <td class="text-center">
+                          <br>
+                         CWE-693: Protection Mechanism Failure
+                        </td>
+                      </tr>
+                    
+                     <tr>
+                        <td>
+                         HELMET HEADER X POWERED BY 
+                        </td>
+                        <td>
+                         Helmet X Powered By header is not configured for this application.
+                        </td>
+                        <td>
+                        
+                             <span class="badge badge-info">
+                        
+                         INFO
+                         </span>
+                        </td>
+                        <td class="text-center">
+                          <br>
+                         CWE-693: Protection Mechanism Failure
+                        </td>
+                      </tr>
+                    
+                     <tr>
+                        <td>
+                         HELMET HEADER FRAME GUARD 
+                        </td>
+                        <td>
+                         Helmet X Frame Options header is not configured for this application.
+                        </td>
+                        <td>
+                        
+                             <span class="badge badge-info">
+                        
+                         INFO
+                         </span>
+                        </td>
+                        <td class="text-center">
+                          <br>
+                         CWE-693: Protection Mechanism Failure
+                        </td>
+                      </tr>
+                    
+                     <tr>
+                        <td>
+                         HELMET HEADER CHECK CROSSDOMAIN 
+                        </td>
+                        <td>
+                         Helmet X Permitted Cross Domain Policies header is not configured for this application.
+                        </td>
+                        <td>
+                        
+                             <span class="badge badge-info">
+                        
+                         INFO
+                         </span>
+                        </td>
+                        <td class="text-center">
+                          <br>
+                         CWE-693: Protection Mechanism Failure
+                        </td>
+                      </tr>
+                    
+                     <tr>
+                        <td>
+                         HELMET HEADER NOSNIFF 
+                        </td>
+                        <td>
+                         Helmet No Sniff header is not configured for this application.
+                        </td>
+                        <td>
+                        
+                             <span class="badge badge-info">
+                        
+                         INFO
+                         </span>
+                        </td>
+                        <td class="text-center">
+                          <br>
+                         CWE-693: Protection Mechanism Failure
+                        </td>
+                      </tr>
+                    
+                     <tr>
+                        <td>
+                         HELMET HEADER HSTS 
+                        </td>
+                        <td>
+                         Helmet HSTS header is not configured for this application.
+                        </td>
+                        <td>
+                        
+                             <span class="badge badge-info">
+                        
+                         INFO
+                         </span>
+                        </td>
+                        <td class="text-center">
+                          <br>
+                         CWE-693: Protection Mechanism Failure
+                        </td>
+                      </tr>
+                    
+                    
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="card ">
+              <div class="card-header">
+                <h5 class="card-category">ALL IDENTIFIED NODE.JS ISSUES</h5>
+                <h2 class="card-title"> JavaScript Issues</h2>
+              </div>
+              <div class="card-body">
+              
+            <div id="scn" class="panel-body">
+            
+              <div class="panel-group id-130e373baead52c2d7bcf658d248bbb06099f4b50481509e6f5ad9cf665505d6">
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#sechelmet-header-check-expect-ctcp">
+                    <div class="excp alert alert-info">
+                       <i class="tim-icons icon-minimal-right"></i> <span id="sechelmet-header-check-expect-ct" data-toggle="collapse">HELMET HEADER CHECK EXPECT CT  -  <strong>1 </strong></span>
+                    </div>
+                    </h4>
+                  </div>
+                  <div id="sechelmet-header-check-expect-ctcp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                  
+                        <div class="well well-sm">
+                            <p><strong>Description: </strong>Helmet Expect CT header is not configured for this application.</p>
+                            <p><strong>Severity: </strong>
+                               
+                                    <span class="badge badge-info">
+                                
+                                INFO
+                                </span>
+                            </p>
+                            <p><strong>OWASP:  </strong></p>
+                            <p><strong>CWE:  </strong>CWE-693: Protection Mechanism Failure</p>
+                            
+                                <button class="btn btn-success" type="button" onclick="$('#fsha2').val('130e373baead52c2d7bcf658d248bbb06099f4b50481509e6f5ad9cf665505d6');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#na_modal').modal('show');">
+                                Not Applicable
+                                </button>
+                                
+                                <button class="btn btn-warning" type="button" onclick="$('#isha2').val('130e373baead52c2d7bcf658d248bbb06099f4b50481509e6f5ad9cf665505d6');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#fp_modal').modal('show');">
+                                False Positive
+                                </button>
+                             
+                             
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="panel-group id-08fb32f413b9b062fc834def52ea5e51a69250ce6e175357f88ad18c76f076e3">
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#sechelmet-header-xss-filtercp">
+                    <div class="excp alert alert-info">
+                       <i class="tim-icons icon-minimal-right"></i> <span id="sechelmet-header-xss-filter" data-toggle="collapse">HELMET HEADER XSS FILTER  -  <strong>1 </strong></span>
+                    </div>
+                    </h4>
+                  </div>
+                  <div id="sechelmet-header-xss-filtercp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                  
+                        <div class="well well-sm">
+                            <p><strong>Description: </strong>Helmet XSS Protection header is not configured for this application.</p>
+                            <p><strong>Severity: </strong>
+                               
+                                    <span class="badge badge-info">
+                                
+                                INFO
+                                </span>
+                            </p>
+                            <p><strong>OWASP:  </strong></p>
+                            <p><strong>CWE:  </strong>CWE-693: Protection Mechanism Failure</p>
+                            
+                                <button class="btn btn-success" type="button" onclick="$('#fsha2').val('08fb32f413b9b062fc834def52ea5e51a69250ce6e175357f88ad18c76f076e3');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#na_modal').modal('show');">
+                                Not Applicable
+                                </button>
+                                
+                                <button class="btn btn-warning" type="button" onclick="$('#isha2').val('08fb32f413b9b062fc834def52ea5e51a69250ce6e175357f88ad18c76f076e3');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#fp_modal').modal('show');">
+                                False Positive
+                                </button>
+                             
+                             
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="panel-group id-3cfcadf24eeb9aa55a7525142a4107b1b3d9548fa277ae489688a9f4bd46366c">
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#sechelmet-header-ienoopencp">
+                    <div class="excp alert alert-info">
+                       <i class="tim-icons icon-minimal-right"></i> <span id="sechelmet-header-ienoopen" data-toggle="collapse">HELMET HEADER IENOOPEN  -  <strong>1 </strong></span>
+                    </div>
+                    </h4>
+                  </div>
+                  <div id="sechelmet-header-ienoopencp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                  
+                        <div class="well well-sm">
+                            <p><strong>Description: </strong>Helmet IE No Open header is not configured for this application.</p>
+                            <p><strong>Severity: </strong>
+                               
+                                    <span class="badge badge-info">
+                                
+                                INFO
+                                </span>
+                            </p>
+                            <p><strong>OWASP:  </strong></p>
+                            <p><strong>CWE:  </strong>CWE-693: Protection Mechanism Failure</p>
+                            
+                                <button class="btn btn-success" type="button" onclick="$('#fsha2').val('3cfcadf24eeb9aa55a7525142a4107b1b3d9548fa277ae489688a9f4bd46366c');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#na_modal').modal('show');">
+                                Not Applicable
+                                </button>
+                                
+                                <button class="btn btn-warning" type="button" onclick="$('#isha2').val('3cfcadf24eeb9aa55a7525142a4107b1b3d9548fa277ae489688a9f4bd46366c');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#fp_modal').modal('show');">
+                                False Positive
+                                </button>
+                             
+                             
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="panel-group id-b6d1c650204b6230d4dbbe831e42a5f74218f9d5749336b0d557bdba917a8136">
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#sechelmet-header-dns-prefetchcp">
+                    <div class="excp alert alert-info">
+                       <i class="tim-icons icon-minimal-right"></i> <span id="sechelmet-header-dns-prefetch" data-toggle="collapse">HELMET HEADER DNS PREFETCH  -  <strong>1 </strong></span>
+                    </div>
+                    </h4>
+                  </div>
+                  <div id="sechelmet-header-dns-prefetchcp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                  
+                        <div class="well well-sm">
+                            <p><strong>Description: </strong>Helmet DNS Prefetch header is not configured for this application.</p>
+                            <p><strong>Severity: </strong>
+                               
+                                    <span class="badge badge-info">
+                                
+                                INFO
+                                </span>
+                            </p>
+                            <p><strong>OWASP:  </strong></p>
+                            <p><strong>CWE:  </strong>CWE-693: Protection Mechanism Failure</p>
+                            
+                                <button class="btn btn-success" type="button" onclick="$('#fsha2').val('b6d1c650204b6230d4dbbe831e42a5f74218f9d5749336b0d557bdba917a8136');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#na_modal').modal('show');">
+                                Not Applicable
+                                </button>
+                                
+                                <button class="btn btn-warning" type="button" onclick="$('#isha2').val('b6d1c650204b6230d4dbbe831e42a5f74218f9d5749336b0d557bdba917a8136');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#fp_modal').modal('show');">
+                                False Positive
+                                </button>
+                             
+                             
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="panel-group id-2fd57c7d0e5fe5fad07a564c6ca0532af25da30504bf83904b90a43d43220f1a">
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#secrate-limit-controlcp">
+                    <div class="excp alert alert-info">
+                       <i class="tim-icons icon-minimal-right"></i> <span id="secrate-limit-control" data-toggle="collapse">RATE LIMIT CONTROL  -  <strong>1 </strong></span>
+                    </div>
+                    </h4>
+                  </div>
+                  <div id="secrate-limit-controlcp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                  
+                        <div class="well well-sm">
+                            <p><strong>Description: </strong>This application does not have API rate limiting controls.</p>
+                            <p><strong>Severity: </strong>
+                               
+                                    <span class="badge badge-info">
+                                
+                                INFO
+                                </span>
+                            </p>
+                            <p><strong>OWASP:  </strong></p>
+                            <p><strong>CWE:  </strong>CWE-770: Allocation of Resources Without Limits or Throttling</p>
+                            
+                                <button class="btn btn-success" type="button" onclick="$('#fsha2').val('2fd57c7d0e5fe5fad07a564c6ca0532af25da30504bf83904b90a43d43220f1a');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#na_modal').modal('show');">
+                                Not Applicable
+                                </button>
+                                
+                                <button class="btn btn-warning" type="button" onclick="$('#isha2').val('2fd57c7d0e5fe5fad07a564c6ca0532af25da30504bf83904b90a43d43220f1a');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#fp_modal').modal('show');">
+                                False Positive
+                                </button>
+                             
+                             
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="panel-group id-51b99a7605c38bbb33671f091ee8ca9cc4d819d746678d5babf42727b4a2a89b">
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#sechelmet-header-referrer-policycp">
+                    <div class="excp alert alert-info">
+                       <i class="tim-icons icon-minimal-right"></i> <span id="sechelmet-header-referrer-policy" data-toggle="collapse">HELMET HEADER REFERRER POLICY  -  <strong>1 </strong></span>
+                    </div>
+                    </h4>
+                  </div>
+                  <div id="sechelmet-header-referrer-policycp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                  
+                        <div class="well well-sm">
+                            <p><strong>Description: </strong>Helmet Referrer Policy header is not configured for this application.</p>
+                            <p><strong>Severity: </strong>
+                               
+                                    <span class="badge badge-info">
+                                
+                                INFO
+                                </span>
+                            </p>
+                            <p><strong>OWASP:  </strong></p>
+                            <p><strong>CWE:  </strong>CWE-693: Protection Mechanism Failure</p>
+                            
+                                <button class="btn btn-success" type="button" onclick="$('#fsha2').val('51b99a7605c38bbb33671f091ee8ca9cc4d819d746678d5babf42727b4a2a89b');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#na_modal').modal('show');">
+                                Not Applicable
+                                </button>
+                                
+                                <button class="btn btn-warning" type="button" onclick="$('#isha2').val('51b99a7605c38bbb33671f091ee8ca9cc4d819d746678d5babf42727b4a2a89b');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#fp_modal').modal('show');">
+                                False Positive
+                                </button>
+                             
+                             
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="panel-group id-7e47c22ea8f6dd1f602fcf9f7241d0c0dea4471b8207d9822320c5b0eed506b6">
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#secanti-csrf-controlcp">
+                    <div class="excp alert alert-info">
+                       <i class="tim-icons icon-minimal-right"></i> <span id="secanti-csrf-control" data-toggle="collapse">ANTI CSRF CONTROL  -  <strong>1 </strong></span>
+                    </div>
+                    </h4>
+                  </div>
+                  <div id="secanti-csrf-controlcp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                  
+                        <div class="well well-sm">
+                            <p><strong>Description: </strong>This application does not have anti CSRF protection which prevents cross site request forgery attacks.</p>
+                            <p><strong>Severity: </strong>
+                               
+                                    <span class="badge badge-info">
+                                
+                                INFO
+                                </span>
+                            </p>
+                            <p><strong>OWASP:  </strong></p>
+                            <p><strong>CWE:  </strong>CWE-352: Cross-Site Request Forgery (CSRF)</p>
+                            
+                                <button class="btn btn-success" type="button" onclick="$('#fsha2').val('7e47c22ea8f6dd1f602fcf9f7241d0c0dea4471b8207d9822320c5b0eed506b6');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#na_modal').modal('show');">
+                                Not Applicable
+                                </button>
+                                
+                                <button class="btn btn-warning" type="button" onclick="$('#isha2').val('7e47c22ea8f6dd1f602fcf9f7241d0c0dea4471b8207d9822320c5b0eed506b6');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#fp_modal').modal('show');">
+                                False Positive
+                                </button>
+                             
+                             
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="panel-group id-a573e6572481280d4812ff2867408a0aa4e91323ffc9ecbf79ecf57b2ca70621">
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#sechelmet-header-check-cspcp">
+                    <div class="excp alert alert-info">
+                       <i class="tim-icons icon-minimal-right"></i> <span id="sechelmet-header-check-csp" data-toggle="collapse">HELMET HEADER CHECK CSP  -  <strong>1 </strong></span>
+                    </div>
+                    </h4>
+                  </div>
+                  <div id="sechelmet-header-check-cspcp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                  
+                        <div class="well well-sm">
+                            <p><strong>Description: </strong>Helmet Content Security Policy header is not configured for this application.</p>
+                            <p><strong>Severity: </strong>
+                               
+                                    <span class="badge badge-info">
+                                
+                                INFO
+                                </span>
+                            </p>
+                            <p><strong>OWASP:  </strong></p>
+                            <p><strong>CWE:  </strong>CWE-693: Protection Mechanism Failure</p>
+                            
+                                <button class="btn btn-success" type="button" onclick="$('#fsha2').val('a573e6572481280d4812ff2867408a0aa4e91323ffc9ecbf79ecf57b2ca70621');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#na_modal').modal('show');">
+                                Not Applicable
+                                </button>
+                                
+                                <button class="btn btn-warning" type="button" onclick="$('#isha2').val('a573e6572481280d4812ff2867408a0aa4e91323ffc9ecbf79ecf57b2ca70621');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#fp_modal').modal('show');">
+                                False Positive
+                                </button>
+                             
+                             
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="panel-group id-a35a04e277c77f5dba4b16aca256fbd3cf3603b960a4cd423d01b7860682278e">
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#sechelmet-header-feature-policycp">
+                    <div class="excp alert alert-info">
+                       <i class="tim-icons icon-minimal-right"></i> <span id="sechelmet-header-feature-policy" data-toggle="collapse">HELMET HEADER FEATURE POLICY  -  <strong>1 </strong></span>
+                    </div>
+                    </h4>
+                  </div>
+                  <div id="sechelmet-header-feature-policycp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                  
+                        <div class="well well-sm">
+                            <p><strong>Description: </strong>Helmet Feature Policy header is not configured for this application.</p>
+                            <p><strong>Severity: </strong>
+                               
+                                    <span class="badge badge-info">
+                                
+                                INFO
+                                </span>
+                            </p>
+                            <p><strong>OWASP:  </strong></p>
+                            <p><strong>CWE:  </strong>CWE-693: Protection Mechanism Failure</p>
+                            
+                                <button class="btn btn-success" type="button" onclick="$('#fsha2').val('a35a04e277c77f5dba4b16aca256fbd3cf3603b960a4cd423d01b7860682278e');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#na_modal').modal('show');">
+                                Not Applicable
+                                </button>
+                                
+                                <button class="btn btn-warning" type="button" onclick="$('#isha2').val('a35a04e277c77f5dba4b16aca256fbd3cf3603b960a4cd423d01b7860682278e');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#fp_modal').modal('show');">
+                                False Positive
+                                </button>
+                             
+                             
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="panel-group id-3366fb6372e154ef7fd1d72ced90e5ba8f3ee1bd540baf444d54a6f35684336c">
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#sechelmet-header-x-powered-bycp">
+                    <div class="excp alert alert-info">
+                       <i class="tim-icons icon-minimal-right"></i> <span id="sechelmet-header-x-powered-by" data-toggle="collapse">HELMET HEADER X POWERED BY  -  <strong>1 </strong></span>
+                    </div>
+                    </h4>
+                  </div>
+                  <div id="sechelmet-header-x-powered-bycp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                  
+                        <div class="well well-sm">
+                            <p><strong>Description: </strong>Helmet X Powered By header is not configured for this application.</p>
+                            <p><strong>Severity: </strong>
+                               
+                                    <span class="badge badge-info">
+                                
+                                INFO
+                                </span>
+                            </p>
+                            <p><strong>OWASP:  </strong></p>
+                            <p><strong>CWE:  </strong>CWE-693: Protection Mechanism Failure</p>
+                            
+                                <button class="btn btn-success" type="button" onclick="$('#fsha2').val('3366fb6372e154ef7fd1d72ced90e5ba8f3ee1bd540baf444d54a6f35684336c');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#na_modal').modal('show');">
+                                Not Applicable
+                                </button>
+                                
+                                <button class="btn btn-warning" type="button" onclick="$('#isha2').val('3366fb6372e154ef7fd1d72ced90e5ba8f3ee1bd540baf444d54a6f35684336c');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#fp_modal').modal('show');">
+                                False Positive
+                                </button>
+                             
+                             
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="panel-group id-754b8beb5d1e233bf7a87f6b40a067b2fa44d440f05714d750c02216f3a61e16">
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#sechelmet-header-frame-guardcp">
+                    <div class="excp alert alert-info">
+                       <i class="tim-icons icon-minimal-right"></i> <span id="sechelmet-header-frame-guard" data-toggle="collapse">HELMET HEADER FRAME GUARD  -  <strong>1 </strong></span>
+                    </div>
+                    </h4>
+                  </div>
+                  <div id="sechelmet-header-frame-guardcp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                  
+                        <div class="well well-sm">
+                            <p><strong>Description: </strong>Helmet X Frame Options header is not configured for this application.</p>
+                            <p><strong>Severity: </strong>
+                               
+                                    <span class="badge badge-info">
+                                
+                                INFO
+                                </span>
+                            </p>
+                            <p><strong>OWASP:  </strong></p>
+                            <p><strong>CWE:  </strong>CWE-693: Protection Mechanism Failure</p>
+                            
+                                <button class="btn btn-success" type="button" onclick="$('#fsha2').val('754b8beb5d1e233bf7a87f6b40a067b2fa44d440f05714d750c02216f3a61e16');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#na_modal').modal('show');">
+                                Not Applicable
+                                </button>
+                                
+                                <button class="btn btn-warning" type="button" onclick="$('#isha2').val('754b8beb5d1e233bf7a87f6b40a067b2fa44d440f05714d750c02216f3a61e16');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#fp_modal').modal('show');">
+                                False Positive
+                                </button>
+                             
+                             
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="panel-group id-434dabd0effbd5a5aae394bf2207798858211400055496a7ece6d73707dc2166">
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#sechelmet-header-check-crossdomaincp">
+                    <div class="excp alert alert-info">
+                       <i class="tim-icons icon-minimal-right"></i> <span id="sechelmet-header-check-crossdomain" data-toggle="collapse">HELMET HEADER CHECK CROSSDOMAIN  -  <strong>1 </strong></span>
+                    </div>
+                    </h4>
+                  </div>
+                  <div id="sechelmet-header-check-crossdomaincp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                  
+                        <div class="well well-sm">
+                            <p><strong>Description: </strong>Helmet X Permitted Cross Domain Policies header is not configured for this application.</p>
+                            <p><strong>Severity: </strong>
+                               
+                                    <span class="badge badge-info">
+                                
+                                INFO
+                                </span>
+                            </p>
+                            <p><strong>OWASP:  </strong></p>
+                            <p><strong>CWE:  </strong>CWE-693: Protection Mechanism Failure</p>
+                            
+                                <button class="btn btn-success" type="button" onclick="$('#fsha2').val('434dabd0effbd5a5aae394bf2207798858211400055496a7ece6d73707dc2166');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#na_modal').modal('show');">
+                                Not Applicable
+                                </button>
+                                
+                                <button class="btn btn-warning" type="button" onclick="$('#isha2').val('434dabd0effbd5a5aae394bf2207798858211400055496a7ece6d73707dc2166');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#fp_modal').modal('show');">
+                                False Positive
+                                </button>
+                             
+                             
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="panel-group id-90ca373270b0e62000ffb8ff538d0611a5d21b637b2c48830ddd40cff24674b6">
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#sechelmet-header-nosniffcp">
+                    <div class="excp alert alert-info">
+                       <i class="tim-icons icon-minimal-right"></i> <span id="sechelmet-header-nosniff" data-toggle="collapse">HELMET HEADER NOSNIFF  -  <strong>1 </strong></span>
+                    </div>
+                    </h4>
+                  </div>
+                  <div id="sechelmet-header-nosniffcp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                  
+                        <div class="well well-sm">
+                            <p><strong>Description: </strong>Helmet No Sniff header is not configured for this application.</p>
+                            <p><strong>Severity: </strong>
+                               
+                                    <span class="badge badge-info">
+                                
+                                INFO
+                                </span>
+                            </p>
+                            <p><strong>OWASP:  </strong></p>
+                            <p><strong>CWE:  </strong>CWE-693: Protection Mechanism Failure</p>
+                            
+                                <button class="btn btn-success" type="button" onclick="$('#fsha2').val('90ca373270b0e62000ffb8ff538d0611a5d21b637b2c48830ddd40cff24674b6');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#na_modal').modal('show');">
+                                Not Applicable
+                                </button>
+                                
+                                <button class="btn btn-warning" type="button" onclick="$('#isha2').val('90ca373270b0e62000ffb8ff538d0611a5d21b637b2c48830ddd40cff24674b6');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#fp_modal').modal('show');">
+                                False Positive
+                                </button>
+                             
+                             
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="panel-group id-f5eb96bed7d07fcf8bb16c34291b9e4361bd2d89679a3b3df2e91fb70c10a17c">
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#sechelmet-header-hstscp">
+                    <div class="excp alert alert-info">
+                       <i class="tim-icons icon-minimal-right"></i> <span id="sechelmet-header-hsts" data-toggle="collapse">HELMET HEADER HSTS  -  <strong>1 </strong></span>
+                    </div>
+                    </h4>
+                  </div>
+                  <div id="sechelmet-header-hstscp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                  
+                        <div class="well well-sm">
+                            <p><strong>Description: </strong>Helmet HSTS header is not configured for this application.</p>
+                            <p><strong>Severity: </strong>
+                               
+                                    <span class="badge badge-info">
+                                
+                                INFO
+                                </span>
+                            </p>
+                            <p><strong>OWASP:  </strong></p>
+                            <p><strong>CWE:  </strong>CWE-693: Protection Mechanism Failure</p>
+                            
+                                <button class="btn btn-success" type="button" onclick="$('#fsha2').val('f5eb96bed7d07fcf8bb16c34291b9e4361bd2d89679a3b3df2e91fb70c10a17c');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#na_modal').modal('show');">
+                                Not Applicable
+                                </button>
+                                
+                                <button class="btn btn-warning" type="button" onclick="$('#isha2').val('f5eb96bed7d07fcf8bb16c34291b9e4361bd2d89679a3b3df2e91fb70c10a17c');$('#ssha2').val('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');$('#fp_modal').modal('show');">
+                                False Positive
+                                </button>
+                             
+                             
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+        </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+    
+    <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="card ">
+              <div class="card-header">
+                <h5 class="card-category">ALL IDENTIFIED TEMPLATE ISSUES</h5>
+                <h2 class="card-title"> Template Issues</h2>
+              </div>
+              <div class="card-body">
+              
+            <div id="scn" class="panel-body">
+            
+        </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+ <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="card ">
+              <div class="card-header">
+                <h5 class="card-category">ISSUES MARKED AS NOT APPLICABLE</h5>
+                <h2 class="card-title">Not Applicable</h2>
+              </div>
+              <div class="card-body">
+              
+            <div id="scn" class="panel-body">
+            
+        </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+         <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="card ">
+              <div class="card-header">
+                <h5 class="card-category">ISSUES MARKED AS FALSE POSITIVE</h5>
+                <h2 class="card-title">False Positive</h2>
+              </div>
+              <div class="card-body">
+              
+            <div id="scn" class="panel-body">
+            
+        </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+      <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="card ">
+              <div class="card-header">
+                <h5 class="card-category">FILES IN THE ARCHIVE</h5>
+                <h2 class="card-title"> Files</h2>
+                    <form class="navbar-form navbar-right" action="/search" method="POST">
+                    <font color="white">Search in files </font>
+                    <br><br>
+                    <input type="text" name="q" class="form-control" placeholder="Search in files">
+                    <input type="hidden" name="scan_hash" value="e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8">
+                    </form>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table tablesorter " id="">
+                    <thead class=" text-primary">
+                      <tr>
+                        <th>
+                          File
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                        <tr>
+                            <td><a href="javascript:view('e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8\u002fDockerfile','0','Dockerfile','e9fd4db6b9c83a295c607ffd01374d3968c238c4bb024489bbf9bfa5753965d8');">Dockerfile</a></td>
+                        </tr>
+                        
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!--File View Modal-->
+    <div id="myModal" class="modal" role="dialog" style="position: fixed;" tabindex="-1">
+    <div class="modal-admin">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button id="cls" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 id="fname" class="modal-title"></h4>
+            <h6 id="pth"></h6>
+        </div>
+        <div id="bdy" class="modal-body">
+        </div>
+        </div>
+    </div>
+    </div>
+    <!--Modal End-->
+
+<!--fasle positive modal-->
+<div id="fp_modal" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Confirm</h4>
+      </div>
+      <div class="modal-body">
+        <p>Do you want to mark this issue as false positive?</p>
+      </div>
+      <div class="modal-footer">
+        <input type="hidden" value="" id="isha2">
+        <input type="hidden" value="" id="ssha2">
+        <button id="inv" type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        <button type="button" class="btn btn-primary" onclick="move_issue($('#ssha2').val(), $('#isha2').val(), 'fp')">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--not applicable modal-->
+<div id="na_modal" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Confirm</h4>
+      </div>
+      <div class="modal-body">
+        <p>Do you want to mark this issue as not applicable?</p>
+      </div>
+      <div class="modal-footer">
+        <input type="hidden" value="" id="fsha2">
+        <input type="hidden" value="" id="ssha2">
+        <button id="isu" type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        <button type="button" class="btn btn-primary" onclick="move_issue($('#ssha2').val(), $('#fsha2').val(), 'na')">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--revert modal-->
+<div id="revert_modal" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Confirm</h4>
+      </div>
+      <div class="modal-body">
+        <p>Do you want to move the finding back to issues?</p>
+      </div>
+      <div class="modal-footer">
+        <input type="hidden" value="" id="rsha2">
+        <input type="hidden" value="" id="ssha2">
+        <button id="bck" type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        <button type="button" class="btn btn-primary" onclick="revert($('#ssha2').val(), $('#rsha2').val())">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+  </div>
+</div>
+  
+   
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="copyright">
+             <img src="/static/assets/img/nodejsscan.png" width="48" height="48">
+             © 2024 nodejsscan v4.8 | <a href="https://ajinabraham.com">Ajin Abraham</a> | <a href="https://opensecurity.in">OpenSecurity</a>.
+          </div>
+        </div>
+      </footer>
+  
+  
+
+
+ 
+   
+  <!--   Core JS Files   -->
+  <script src="/static/assets/js/core/jquery.min.js"></script>
+  <script src="/static/assets/js/nodejsscan.js"></script>
+  <script src="/static/assets/js/core/bootstrap.min.js"></script>
+  <script src="/static/assets/js/plugins/jquery.bootstrap-growl.min.js"></script>    
+ 
+     <script src="/static/assets/js/plugins/chartjs.min.js"></script>
+    <script src="/static/assets/js/plugins/shCore.js"></script>
+    <script src="/static/assets/js/plugins/shBrushJScript.js"></script>
+    <script src="/static/assets/js/plugins/highlight.pack.js"></script>
+     <script>
+    // Findings
+    var canvas = document.getElementById('Findings').getContext('2d');
+    var gradientStroke = canvas.createLinearGradient(0, 230, 0, 50);
+    gradientStroke.addColorStop(1, 'rgba(29,140,248,0.2)');
+    gradientStroke.addColorStop(0.4, 'rgba(29,140,248,0.0)');
+    gradientStroke.addColorStop(0, 'rgba(29,140,248,0)'); //blue colors
+
+    var data = {
+        labels: [
+        
+         'HELMET HEADER CHECK EXPECT CT ',
+        
+         'HELMET HEADER XSS FILTER ',
+        
+         'HELMET HEADER IENOOPEN ',
+        
+         'HELMET HEADER DNS PREFETCH ',
+        
+         'RATE LIMIT CONTROL ',
+        
+         'HELMET HEADER REFERRER POLICY ',
+        
+         'ANTI CSRF CONTROL ',
+        
+         'HELMET HEADER CHECK CSP ',
+        
+         'HELMET HEADER FEATURE POLICY ',
+        
+         'HELMET HEADER X POWERED BY ',
+        
+         'HELMET HEADER FRAME GUARD ',
+        
+         'HELMET HEADER CHECK CROSSDOMAIN ',
+        
+         'HELMET HEADER NOSNIFF ',
+        
+         'HELMET HEADER HSTS ',
+        
+        
+        ],
+        datasets: [
+            {
+                label: "No of detections",
+                backgroundColor: gradientStroke,
+                borderColor: '#1f8ef1',
+                borderWidth: 2,
+                borderDash: [],
+                borderDashOffset: 0.0,
+                hoverBackgroundColor: gradientStroke,
+                data: [
+                
+                    
+                        1,
+                    
+                
+                    
+                        1,
+                    
+                
+                    
+                        1,
+                    
+                
+                    
+                        1,
+                    
+                
+                    
+                        1,
+                    
+                
+                    
+                        1,
+                    
+                
+                    
+                        1,
+                    
+                
+                    
+                        1,
+                    
+                
+                    
+                        1,
+                    
+                
+                    
+                        1,
+                    
+                
+                    
+                        1,
+                    
+                
+                    
+                        1,
+                    
+                
+                    
+                        1,
+                    
+                
+                    
+                        1,
+                    
+                
+                
+                ],
+            }
+        ]
+    };
+    var option = {
+    animation: {
+      duration:5000
+    },
+    responsive: true,
+    legend: {
+    display: false
+    }
+    };
+
+    var myBarChart = Chart.Bar(canvas,{
+        data:data,
+        options:option
+    });
+
+
+    // Severity
+      var ctx = document.getElementById("Severity").getContext('2d');
+        var myChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Error', 'Warning', 'Info'],
+            datasets: [{
+            backgroundColor: [
+                'rgb(247, 70, 74)',
+                "#ffe000e8",
+                "#1d8cf8",
+            ],
+            data: [0, 0, 14]
+            }]
+        }
+        });
+   
+
+    // Issues  vs Files
+
+    var ctx2 = document.getElementById("Nos").getContext('2d');
+    var dodata = {
+    datasets: [{
+        data: [1, 14],
+        backgroundColor: [
+        'rgb(70, 191, 189)',
+        "#fd5d93",
+        ]
+    }],
+    // These labels appear in the legend and in the tooltips when hovering different arcs
+    labels: [
+        'No of Files Scanned',
+        'No of Issues Identified',
+    ]
+    };
+    var myChart = new Chart(ctx2, {
+    type: 'doughnut',
+    data: dodata,
+    });
+
+    hljs.initHighlightingOnLoad();
+</script>
+  
+
+
+</body></html>
